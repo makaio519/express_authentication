@@ -46,4 +46,3 @@ passport.use(STRATEGY);
 
 module.exports = passport; 
 
-const passport = require('./config/ppConfig');
