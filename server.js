@@ -4,6 +4,7 @@ const layouts = require('express-ejs-layouts');
 const app = express();
 const session = require('express-session');
 const flash = require('connect-flash');
+const isLoggedIn = require('./middleware/isLoggedIn');
 
 const SECRET_SESSION = process.env.SECRET_SESSION;
 console.log('yyoooooo........>>>', SECRET_SESSION);
@@ -44,3 +45,4 @@ const server = app.listen(PORT, () => {
 });
 
 module.exports = server;
+
